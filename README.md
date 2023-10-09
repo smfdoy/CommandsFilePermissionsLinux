@@ -8,12 +8,8 @@ The research team at my organization needs to update the file permissions for ce
 
 <h2>Languages and Utilities Used</h2>
 
-- <b></b> 
-- <b></b>
-
-<h2>Environments Used </h2>
-
-- <b>Bash</b> 
+- <b>Linux</b>
+- <b>Bash</b>
 
 <h2>Program Walk-Through:</h2>
 
@@ -42,23 +38,33 @@ The organization determined that other shouldn't have write access to any of the
 The following code demonstrates how I used Linux commands to do this:<br />
 <br />
 <img src="https://i.imgur.com/Mp9xtVy.png" height="80%" width="80%"alt=/><br />
-The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The chmod command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the project_k.txt file. After this, I used ls -la to review the updates I made.<br/>
+The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The chmod command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the <i>project_k.txt</i> file. After this, I used <i>ls -la</i> to review the updates I made.<br/>
 <br/>
-<b>Change file permissions on a hidden file:</b>  <br/>
+<b>Change file permissions on a hidden file:</b>  
+ <br/>
+The research team at my organization recently archived <i>project_x.txt</i>. They do not want anyone to have write access to this project, but the user and group should have read access. 
 <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+The following code demonstrates how I used Linux commands to change the permissions:
+<br/>
+<br/>
+<img src="https://i.imgur.com/9cbXAuN.png" height="80%" width="80%" alt=/>
 <br />
+ The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know <i>.project_x.txt</i> is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with <i>u-w</i>. Then, I removed write permissions from the group with <i>g-w</i>, and added read permissions to the group with <i>g+r</i>. 
+ <br />
+ <br />
+<b>Change directory permissions:</b>  
+<br/>
+ My organization only wants the <i>researcher2</i> user to have access to the drafts directory and its contents. This means that no one other than <i>researcher2</i> should have execute permissions.
+<br/>
+The following code demonstrates how I used Linux commands to change the permissions:
+<br/>
+<img src="https://i.imgur.com/7xOud2x.png" height="80%" width="80%" alt=/>
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the <i>chmod</i> command to remove them. The <i>researcher2</i> user already had execute permissions, so they did not need to be added.
+ <br />
+ <br />
+<b>Summary:</b>  <br/>
+I changed multiple permissions to match the level of authorization the organization wanted for files and directories in the <i>projects</i> directory. The first step in this was using <i>ls -la</i> to check the permissions for the directory. This informed my decisions in the following steps. I then used the <i>chmod</i> command multiple times to change the permissions on files and directories.<br />
 </p>
 
 <!--
