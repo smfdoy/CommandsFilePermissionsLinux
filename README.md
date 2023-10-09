@@ -33,7 +33,7 @@ For example, the file permissions for <i>project_t.txt</i> are <i>-rw-rw-r--</i>
 <br />
 <p align="center">
 <b> Change file permissions:</b> <br/>
-The organization determined that other shouldn't have write access to any of their files. To comply with this, I referred to the file permissions that I previously returned. I determined <i>project_k.txt</i> must have the write access removed for other. <br/>
+The organization determined that other shouldn't have write access to any of their files. To comply with this, I referred to the file permissions that I previously returned. I determined <i>project_k.txt</i> must have the write access removed for other. 
  <br/>
 The following code demonstrates how I used Linux commands to do this:<br />
 <br />
