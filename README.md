@@ -11,7 +11,7 @@ The research team at my organization needs to update the file permissions for ce
 - <b>Linux</b>
 - <b>Bash</b>
 
-<h2>Program Walk-Through:</h2>
+<h2>Project Walk-Through:</h2>
 
 <p align="center">
 <b>Check file and directory details:</b>
